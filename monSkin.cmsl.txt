@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<root xmlns="http://skin.calameo.com/2.0">
+
+  <!-- Bibliothèque média : ici tu peux mettre tes images pour boutons -->
+  <media name="mediaLib" source="https://www.example.com/library.png" />
+
+  <!-- Conteneur de la visionneuse avec marges -->
+  <viewer left="10" right="10" top="60" bottom="10" />
+
+  <!-- Layout principal avec boutons -->
+  <layout horizontalCenter="0" top="10" alignment="center">
+
+    <!-- Boutons navigation personnalisés -->
+    <button action="previousPage" upState="swfLib#btnPreviousPage" />
+    <button action="nextPage" upState="swfLib#btnNextPage" />
+
+    <!-- Bouton fullscreen -->
+    <button action="fullscreen" upState="mediaLib#85,32,35,35" />
+
+    <!-- Sous-menu (optionnel) -->
+    <button action="submenu" upState="swfLib#btnSubMenu">
+      <button action="book" upState="swfLib#btnBookOn" />
+      <button action="slide" upState="swfLib#btnSlideOn" />
+    </button>
+
+  </layout>
+
+</root>
